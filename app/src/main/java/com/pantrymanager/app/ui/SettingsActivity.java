@@ -30,11 +30,11 @@ public class SettingsActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
                 if (id == R.id.nav_pantry) {
-                    startActivity(new Intent(SettingsActivity.class, PantryActivity.class));
+                    startActivity(new Intent(SettingsActivity.this, PantryActivity.class));
                     overridePendingTransition(0, 0);
                     return true;
                 } else if (id == R.id.nav_recipes) {
-                    startActivity(new Intent(SettingsActivity.class, SuggestedRecipesActivity.class));
+                    startActivity(new Intent(SettingsActivity.this, SuggestedRecipesActivity.class));
                     overridePendingTransition(0, 0);
                     return true;
                 }
